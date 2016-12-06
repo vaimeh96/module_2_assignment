@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin: 50px;
+}
+
+.body-content {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.menu-box {
+    border: 1px solid #000;
+    background-color: #d4d4d4;
+}
+
+.title {
+    text-align: center;
+    float: right;
+    clear: left;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 175px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.content {
+    float: right;
+    padding: 10px;
+}
+
+#chicken {
+    background-color: #f00;
+}
+
+#beef {
+    background-color: #0f0;
+}
+
+#sushi {
+    background-color: #00f;
+}
+
+.hello {
+    clear: left;
+}
+
+
+/********** Large Displays **********/
+
+@media (min-width: 992px) {
+    .menu-box {
+        float: left;
+        width: 32%;
+    }
+    #beef-box {
+        margin: 0 2%;
+    }
+}
+
+
+/********** Medium Displays **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #chicken-box, #beef-box {
+        float: left;
+        width: 49%;
+    }
+    #beef-box {
+        margin-left: 2%;
+    }
+    #sushi-box {
+        float: left;
+        width: 100%;
+        margin-top: 2%;
+    }
+}
+
+
+/********** Small Displays **********/
+
+@media (max-width:767px) {
+   
+    .menu-box {
+        float: left;
+        margin: 0 1%;
+    }
+    #beef-box,
+    #sushi-box {
+        margin-top: 2%;
+    }
+    #sushi-box {
+        margin-bottom: 2%;
+    }
+}
