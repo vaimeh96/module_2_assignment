@@ -1,0 +1,47 @@
+header {
+	position: relative;
+}
+header .navbar-default {
+		background: #cccccc;
+}
+header .title {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+div.container {
+	margin: 30px auto 0;
+	width: 90%;
+	position: relative;
+}
+div.container .menu-container {
+	padding: 20px;
+	box-sizing: border-box;
+}
+div.container .menu-container  .menu-item {
+	display: inline-block;
+	padding: 0 20px 20px;
+	border-radius: 5px;
+	height: auto;
+	max-height: 300px;
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #cccccc;
+	overflow: hidden
+}
+.menu-item .menu-title {
+	display: block;
+	padding: 10px 0;
+	font-weight: bold;
+}
+.menu-item .menu-text-container {
+	display: block;
+    max-height: 200px;
+    overflow: auto;
+    padding: 0 10px;
+	margin: 0 0 10px;
+}
+.toTop {
+	padding: 5px 0;
+	font-size: 17px;
+}
