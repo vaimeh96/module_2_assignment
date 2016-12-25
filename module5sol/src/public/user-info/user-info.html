@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>User information</h2>
+
+  <p ng-if="infoCtrl.userData === undefined">Not Signed Up Yet. Sign up Now!</p>
+  <div class="col-md-6" ng-if="infoCtrl.userData !== undefined">
+    <p> <b>First Name:</b> {{infoCtrl.userData.firstName}}</p>
+    <p> <b>Last Name:</b> {{infoCtrl.userData.lastName}}</p>
+    <p> <b>Email:</b> {{infoCtrl.userData.email}}</p>
+    <p> <b>Phone number:</b> {{infoCtrl.userData.phone}}</p>
+    <p> <b>Favorite dish:</b> {{infoCtrl.userData.favItem.name}}</p>
+    <img ng-src="{{infoCtrl.apiPath}}/images/{{infoCtrl.userData.favItem.short_name}}.jpg">
+    <p>{{infoCtrl.userData.favItem.description}}
+
+  </div>
+</div>
+
